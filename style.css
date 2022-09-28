@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     margin-top: 30px;
+    }
+ .attribution a { color: hsl(228, 45%, 44%); }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+p{
+    font-size: 16px;
+}
+.main-container{
+    padding: 5% 10%;
+}
+.header-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text-container{
+    width: 500px;
+    padding: 1rem 0;
+    min-width: 375px;
+}
+.text-container h1{
+    color: #fff;
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+.text-container p{
+    color: #fff;
+}
+
+/* Form Section */
+.container{
+    width: 480px;
+    min-width: 375px;
+    padding: 1rem 0;
+}
+.trial-text-container{
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 5px hsl(248, 32%, 49%);
+}
+.trial-text-container p{
+    color: #fff;
+    margin: 0;
+}
+.trial-text-container p span{
+    font-weight: 600;
+}
+.form-container{
+    background-color: #fff;
+    padding: 2.4rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px #fff;
+}
+.form-control{
+    margin-bottom: 16px;
+    position: relative;
+}
+.form-control input{
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    font-family: inherit;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: hsl(246, 25%, 77%);
+    display: block;
+}
+.form-control.success input{
+    border-color:  hsl(154, 59%, 51%);
+}
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%);
+}
+
+.form-control i{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+}
+.form-control.success i.fa-circle-check{
+    visibility: visible;
+    color: hsl(154, 59%, 51%);
+}
+.form-control.error i.fa-circle-exclamation{
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
+}
+.form-control small{
+    text-align: right;
+    font-size: 13px;
+    float: right;
+    margin-bottom: 16px;
+    margin-top: 4px;
+    visibility: hidden;
+    font-style: italic;
+}
+.form-control.error small{
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
+}
+.clear{
+    clear: both;
+}
+#submit{
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: inherit;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.policy-text{
+    text-align: center;
+    font-size: 11px;
+    padding: .3rem;
+    color: hsl(246, 25%, 77%);
+}
+.policy-text span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+@media screen and (max-width: 375px){
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        width: 375px;
+    } 
+    .main-container{
+        padding: 0;
+    
+    }
+    .container{
+        width: 300px;
+        padding-left: 0;
+    }
+    .header-section{
+        padding: 2%;
+    }
+    .text-container{
+        text-align: center;
+        padding: 0 40px;
+
+    }
+    .text-container h1{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 15px;
+    }
+    .form-container{
+        width: 300px;
+        margin: 0  auto;
+    }
+    .trial-text-container{
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+}

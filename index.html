@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon tag -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- header section starts here -->
+
+    <div class="header-section">
+
+      <!-- Info about the our program starts here -->
+      <div class="text-container">
+        <h1>Learn to code by <br> watching others</h1>
+        <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+     </div>
+     <!-- Info about the our program ends here -->
+     <div class="container">
+      <!-- trial text container starts here -->
+      <div class="trial-text-container">
+        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <!-- trial text container ends here -->
+      <div class="form-container">
+      <form  id="form">
+        <div class="form-control">
+        <input  type="text" placeholder="First Name" id="first-name" autocomplete="off">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small class="error-messages"></small>
+        </div>
+        <div class="clear"></div>
+        <!-- first name input ends here -->
+
+        <!-- last name input starts here -->
+        <div class="form-control">
+        <input  type="text" placeholder="Last Name" id="last-name" autocomplete="off">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small class="error-messages"></small>
+        </div>
+        <div class="clear"></div>
+        <!-- last name input ends here -->
+
+        <!-- email input starts here -->
+        <div class="form-control">
+        <input type="email" placeholder="Email Address" id="email" autocomplete="off">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small class="error-messages"></small>
+        </div>
+        <div class="clear"></div>
+        <!-- email input ends here -->
+
+        <!-- password input starts here -->
+        <div class="form-control">
+        <input type="password" placeholder="Password" id="password">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small class="error-messages"></small>
+        </div>
+        <div class="clear"></div>
+        <!-- password input ends here -->
+        <button id="submit" type="submit">Claim your free trial</button>
+        <p class="policy-text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+       </div>
+       </div>
+      </div>
+    <!-- header section ends here -->
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Charles Mambo</a>.
+      </p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
