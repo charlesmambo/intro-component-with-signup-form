@@ -3,7 +3,7 @@ const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const form = document.getElementById("form");
-let small = document.querySelector("small")
+// let small = document.querySelector("small")
 
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
@@ -32,7 +32,7 @@ function checkInputs(){
     if (emailValue === ""){
         setErrorMessage(email, "Email cannot be empty");  
     }else if (!isEmail(emailValue)){
-        setErrorMessage(email, "Looks like this not an email"); 
+        setErrorMessage(email, "Looks like this is not an email"); 
     }else{
         setSuccessMessage(email);
     }
